@@ -1,5 +1,8 @@
 roygbiv (Roy G. Brain Image Viewer) is an interactive browser-based visualization of cortical surfaces.
 
+[![DOI](https://zenodo.org/badge/55096156.svg)](https://zenodo.org/badge/latestdoi/55096156)
+
+
 Instructions for running demos are below. To run demos locally, install the `flask` Python package.
 
 
