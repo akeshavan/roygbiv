@@ -65,6 +65,13 @@ body {
 	color: black;
 }
 
+#navpill {
+	float: left;
+	left: 0px;
+	margin-left: 37%;
+	text-align: center;
+	color: black;
+}
 
 #nav_label {
 	background-color:#ffffff;
@@ -87,7 +94,7 @@ body {
 
 #plot-canvas {
 	float: left;
-	border: 2px solid #333;
+	border: 2px solid white;
 	width: 300px;
 	height: 200px;
 	padding: 10px;

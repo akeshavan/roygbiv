@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
 		<script src="js/libs/three.min.js"></script>
 		<script src="js/libs/Projector.js"></script>
@@ -18,11 +19,13 @@
         <script src="js/libs/box.js"></script>
         <script src="js/libs/sprintf.js"></script>
 		<script src="js/libs/angular.min.js"></script>
+		<script src="js/libs/bootstrap.min.js"></script>
+
 
         <script src="js/brain.utils.js"></script>
         <script src="js/brain.js"></script>
 		<script src="js/boxplot.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>-->
 
 	</head>
 
@@ -30,13 +33,22 @@
 		<div ng-app="navigator" ng-controller="NavigateController" ng-strict-di>
 			<div id="header_n_label">
 				<h1>ROYGBIV</h1>
+
+
 				<div id="nav_label">
+
+					<div id="navpill" style="margin-left: 37%;">
+						<ul class="nav nav-pills">
+							<li role="presentation" data-toggle="pill" class="active" ng-click="load_hemi('lh')" id="left"><a href="#">LH</a></li>
+							<li role="presentation" data-toggle="pill" class=""><a href="#" ng-click="load_hemi('rh')" id="right">RH</a></li>
+						</ul>
+					</div>
+					<br><br><br>
 					Shift+click on a label to see stats
 					<br />
-					<br />
-					Selected Label: {{selectedLabel}}
+					<b>Selected Label: {{selectedLabel}}</b>
 				</div>
-				<div id="plot-canvas" style="width: 400px; height: 300px;">
+				<div id="plot-canvas" style="width: 400px; height: 300px; margin-left: 0px; margin-top: 0px;">
 				</div>
 			</div>
 			<div id="nav-brain" style="width: 60%; height: 900px; margin-top: 50px; margin-right: 50px;">
@@ -64,6 +76,13 @@
                     manifest_url: 'viz/lh/lh_manifest.json',
                     label_mapper: "viz/labels.json"
                 });
+
+								$scope.load_hemi = function(hemi){
+									console.log("hemisphere is", hemi)
+									$scope.brain.manifest_url = 'viz/'+hemi+'/'+hemi+'_manifest.json'
+									$scope.brain.loadBrain()
+
+								}
 			}]);
 		</script>
 	</body>

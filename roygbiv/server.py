@@ -40,6 +40,7 @@ def make_server(web_dir, data_dir):
 
 
 def launch_server(data_dir, web_dir=HTML_DIR, debug=False, port=5000):
+    print("data_dir", data_dir)
     app = make_server(web_dir=web_dir, data_dir=data_dir)
     app.debug = debug
     app.run(port=port)
