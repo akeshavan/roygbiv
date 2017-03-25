@@ -2,12 +2,12 @@ import os
 
 from flask import Flask, send_from_directory
 
-from . import HTML_DIR, DATA_DIR
+#from . import HTML_DIR, DATA_DIR
 
 _cur_dir = os.path.abspath(os.path.dirname(__file__))
+HTML_DIR = os.path.join(_cur_dir, "web")
 
-
-def make_server(web_dir=HTML_DIR, data_dir=DATA_DIR):
+def make_server(web_dir, data_dir):
 
     app = Flask(__name__)
 
@@ -25,7 +25,7 @@ def make_server(web_dir=HTML_DIR, data_dir=DATA_DIR):
         return send_from_directory(web_dir, html_file)
 
     # Generic
-    @app.route('/data/<path:path>')
+    @app.route('/viz/<path:path>')
     def send_data(path):
         return send_from_directory(data_dir, path)
 
@@ -39,7 +39,8 @@ def make_server(web_dir=HTML_DIR, data_dir=DATA_DIR):
     return app
 
 
-def launch_server(web_dir=HTML_DIR, data_dir=DATA_DIR, debug=False):
+def launch_server(data_dir, web_dir=HTML_DIR, debug=False):
+    print("web dir is", web_dir, "data dir is", data_dir, _cur_dir)
     app = make_server(web_dir=web_dir, data_dir=data_dir)
     app.debug = debug
     app.run()
