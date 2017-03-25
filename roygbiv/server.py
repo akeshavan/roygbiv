@@ -39,11 +39,10 @@ def make_server(web_dir, data_dir):
     return app
 
 
-def launch_server(data_dir, web_dir=HTML_DIR, debug=False):
-    print("web dir is", web_dir, "data dir is", data_dir, _cur_dir)
+def launch_server(data_dir, web_dir=HTML_DIR, debug=False, port=5000):
     app = make_server(web_dir=web_dir, data_dir=data_dir)
     app.debug = debug
-    app.run()
+    app.run(port=port)
 
 
 if __name__ == '__main__':

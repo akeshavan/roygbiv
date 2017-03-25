@@ -3,6 +3,7 @@
 '''
 from roygbiv.server import launch_server
 import argparse
+import os
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="""
@@ -19,6 +20,12 @@ if __name__ == "__main__":
 
     parser.add_argument("DATA", help=("path to directory of a person's mindboggle "
                                   "data"))
+    parser.add_argument("-p", "--port", help="port to run server on (default:5000)",
+                        default=5000)
     args = parser.parse_args()
-
-    launch_server(debug=True, data_dir=args.DATA)
+    viz_dir = os.path.join(args.DATA,"viz")
+    if os.path.exists(args.DATA) and os.path.exists(viz_dir):
+        launch_server(debug=True, data_dir=viz_dir, port=int(args.port))
+    else:
+        raise FileNotFoundError("Cannot find {}/viz".format(args.DATA),
+              "please check that it exists and try again")

@@ -7,13 +7,8 @@ import glob
 import os
 import json
 
-import numpy as np
-
-import nibabel as nib
-
-
-HTML_DIR =  os.path.join(os.path.dirname(__file__), 'web')
-DATA_DIR = os.path.join("/Users/akeshavan/subid", "viz") #'ROYGBIV_PATH', os.path.join(HTML_DIR, 'data'))
+HTML_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), 'web'))
+DATA_DIR = os.environ.get('ROYGBIV_PATH', os.path.join(HTML_DIR, 'data'))
 
 def downsample_vtk(vtk_file, sample_rate):
     """Sample rate: number between 0 and 1."""
@@ -50,6 +45,7 @@ def freesurfer_annot_to_vtks(surface_file, label_file, output_stem='',
                              force=False, verbose=True, output_dir=DATA_DIR):
     """ Splits a surface file into vtk files based on regions in the label file.
     """
+    import numpy as np
     def print_verbose(*args):
         """Print only if verbose True"""
         if verbose:
