@@ -23,7 +23,7 @@ if __name__ == "__main__":
     parser.add_argument("-p", "--port", help="port to run server on (default:5000)",
                         default=5000)
     args = parser.parse_args()
-    viz_dir = os.path.abspath(os.path.join(args.DATA,"viz"))
+    viz_dir = os.path.join(args.DATA,"viz")
     if os.path.exists(args.DATA) and os.path.exists(viz_dir):
         launch_server(debug=True, data_dir=viz_dir, port=int(args.port))
     else:
