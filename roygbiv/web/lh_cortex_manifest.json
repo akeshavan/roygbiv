@@ -1,0 +1,260 @@
+{
+    "colors": {
+        "1002": [
+            "0.7586206896551724",
+            "0.20689655172413793",
+            "0.0"
+        ],
+        "1003": [
+            "0.48275862068965514",
+            "0.4482758620689655",
+            "0.48275862068965514"
+        ],
+        "1005": [
+            "0.3448275862068966",
+            "0.3103448275862069",
+            "0.034482758620689655"
+        ],
+        "1006": [
+            "0.0",
+            "0.3103448275862069",
+            "0.24137931034482757"
+        ],
+        "1007": [
+            "1.0",
+            "0.6896551724137931",
+            "0.48275862068965514"
+        ],
+        "1008": [
+            "0.034482758620689655",
+            "0.24137931034482757",
+            "0.5862068965517241"
+        ],
+        "1009": [
+            "0.6206896551724138",
+            "0.6551724137931034",
+            "1.0"
+        ],
+        "1010": [
+            "0.5172413793103449",
+            "0.8275862068965517",
+            "1.0"
+        ],
+        "1011": [
+            "0.3448275862068966",
+            "0.3793103448275862",
+            "0.3448275862068966"
+        ],
+        "1012": [
+            "0.6206896551724138",
+            "0.06896551724137931",
+            "1.0"
+        ],
+        "1013": [
+            "0.6206896551724138",
+            "0.48275862068965514",
+            "0.3448275862068966"
+        ],
+        "1014": [
+            "0.0",
+            "0.3103448275862069",
+            "0.24137931034482757"
+        ],
+        "1015": [
+            "0.6206896551724138",
+            "0.6551724137931034",
+            "1.0"
+        ],
+        "1016": [
+            "0.48275862068965514",
+            "0.4482758620689655",
+            "0.48275862068965514"
+        ],
+        "1017": [
+            "0.7241379310344828",
+            "1.0",
+            "0.10344827586206896"
+        ],
+        "1018": [
+            "0.0",
+            "0.8620689655172413",
+            "0.7931034482758621"
+        ],
+        "1019": [
+            "0.5172413793103449",
+            "0.8275862068965517",
+            "1.0"
+        ],
+        "1020": [
+            "0.4482758620689655",
+            "0.034482758620689655",
+            "0.24137931034482757"
+        ],
+        "1021": [
+            "0.10344827586206896",
+            "0.896551724137931",
+            "0.3793103448275862"
+        ],
+        "1022": [
+            "1.0",
+            "0.9310344827586207",
+            "0.5862068965517241"
+        ],
+        "1023": [
+            "0.5172413793103449",
+            "0.5862068965517241",
+            "0.5172413793103449"
+        ],
+        "1024": [
+            "0.10344827586206896",
+            "0.896551724137931",
+            "0.3793103448275862"
+        ],
+        "1025": [
+            "0.0",
+            "0.5517241379310345",
+            "0.5172413793103449"
+        ],
+        "1026": [
+            "0.9310344827586207",
+            "0.7931034482758621",
+            "1.0"
+        ],
+        "1027": [
+            "0.7586206896551724",
+            "0.0",
+            "0.5172413793103449"
+        ],
+        "1028": [
+            "0.3448275862068966",
+            "0.3793103448275862",
+            "0.3448275862068966"
+        ],
+        "1029": [
+            "0.0",
+            "0.5517241379310345",
+            "0.5172413793103449"
+        ],
+        "1030": [
+            "0.5172413793103449",
+            "0.6551724137931034",
+            "0.0"
+        ],
+        "1031": [
+            "0.27586206896551724",
+            "0.41379310344827586",
+            "1.0"
+        ],
+        "1034": [
+            "0.3793103448275862",
+            "0.27586206896551724",
+            "0.48275862068965514"
+        ],
+        "1035": [
+            "0.7931034482758621",
+            "0.9655172413793103",
+            "0.7931034482758621"
+        ]
+    },
+    "filename": {
+        "1001": "left_cortical_surface/label1001.vtk",
+        "1002": "left_cortical_surface/label1002.vtk",
+        "1003": "left_cortical_surface/label1003.vtk",
+        "1005": "left_cortical_surface/label1005.vtk",
+        "1006": "left_cortical_surface/label1006.vtk",
+        "1007": "left_cortical_surface/label1007.vtk",
+        "1008": "left_cortical_surface/label1008.vtk",
+        "1009": "left_cortical_surface/label1009.vtk",
+        "1010": "left_cortical_surface/label1010.vtk",
+        "1011": "left_cortical_surface/label1011.vtk",
+        "1012": "left_cortical_surface/label1012.vtk",
+        "1013": "left_cortical_surface/label1013.vtk",
+        "1014": "left_cortical_surface/label1014.vtk",
+        "1015": "left_cortical_surface/label1015.vtk",
+        "1016": "left_cortical_surface/label1016.vtk",
+        "1017": "left_cortical_surface/label1017.vtk",
+        "1018": "left_cortical_surface/label1018.vtk",
+        "1019": "left_cortical_surface/label1019.vtk",
+        "1020": "left_cortical_surface/label1020.vtk",
+        "1021": "left_cortical_surface/label1021.vtk",
+        "1022": "left_cortical_surface/label1022.vtk",
+        "1023": "left_cortical_surface/label1023.vtk",
+        "1024": "left_cortical_surface/label1024.vtk",
+        "1025": "left_cortical_surface/label1025.vtk",
+        "1026": "left_cortical_surface/label1026.vtk",
+        "1027": "left_cortical_surface/label1027.vtk",
+        "1028": "left_cortical_surface/label1028.vtk",
+        "1029": "left_cortical_surface/label1029.vtk",
+        "1030": "left_cortical_surface/label1030.vtk",
+        "1031": "left_cortical_surface/label1031.vtk",
+        "1032": "left_cortical_surface/label1032.vtk",
+        "1033": "left_cortical_surface/label1033.vtk",
+        "1034": "left_cortical_surface/label1034.vtk",
+        "1035": "left_cortical_surface/label1035.vtk",
+        "999":  "left_cortical_surface/label999.vtk"
+    },
+    "name": {
+        "1002": "ctx-lh-caudalanteriorcingulate",
+        "1003": "ctx-lh-caudalmiddlefrontal",
+        "1005": "ctx-lh-cuneus",
+        "1006": "ctx-lh-entorhinal",
+        "1007": "ctx-lh-fusiform",
+        "1008": "ctx-lh-inferiorparietal",
+        "1009": "ctx-lh-inferiortemporal",
+        "1010": "ctx-lh-isthmuscingulate",
+        "1011": "ctx-lh-lateraloccipital",
+        "1012": "ctx-lh-lateralorbitofrontal",
+        "1013": "ctx-lh-lingual",
+        "1014": "ctx-lh-medialorbitofrontal",
+        "1015": "ctx-lh-middletemporal",
+        "1016": "ctx-lh-parahippocampal",
+        "1017": "ctx-lh-paracentral",
+        "1018": "ctx-lh-parsopercularis",
+        "1019": "ctx-lh-parsorbitalis",
+        "1020": "ctx-lh-parstriangularis",
+        "1021": "ctx-lh-pericalcarine",
+        "1022": "ctx-lh-postcentral",
+        "1023": "ctx-lh-posteriorcingulate",
+        "1024": "ctx-lh-precentral",
+        "1025": "ctx-lh-precuneus",
+        "1026": "ctx-lh-rostralanteriorcingulate",
+        "1027": "ctx-lh-rostralmiddlefrontal",
+        "1028": "ctx-lh-superiorfrontal",
+        "1029": "ctx-lh-superiorparietal",
+        "1030": "ctx-lh-superiortemporal",
+        "1031": "ctx-lh-supramarginal",
+        "1034": "ctx-lh-transversetemporal",
+        "1035": "ctx-lh-insula",
+        "2002": "ctx-rh-caudalanteriorcingulate",
+        "2003": "ctx-rh-caudalmiddlefrontal",
+        "2005": "ctx-rh-cuneus",
+        "2006": "ctx-rh-entorhinal",
+        "2007": "ctx-rh-fusiform",
+        "2008": "ctx-rh-inferiorparietal",
+        "2009": "ctx-rh-inferiortemporal",
+        "2010": "ctx-rh-isthmuscingulate",
+        "2011": "ctx-rh-lateraloccipital",
+        "2012": "ctx-rh-lateralorbitofrontal",
+        "2013": "ctx-rh-lingual",
+        "2014": "ctx-rh-medialorbitofrontal",
+        "2015": "ctx-rh-middletemporal",
+        "2016": "ctx-rh-parahippocampal",
+        "2017": "ctx-rh-paracentral",
+        "2018": "ctx-rh-parsopercularis",
+        "2019": "ctx-rh-parsorbitalis",
+        "2020": "ctx-rh-parstriangularis",
+        "2021": "ctx-rh-pericalcarine",
+        "2022": "ctx-rh-postcentral",
+        "2023": "ctx-rh-posteriorcingulate",
+        "2024": "ctx-rh-precentral",
+        "2025": "ctx-rh-precuneus",
+        "2026": "ctx-rh-rostralanteriorcingulate",
+        "2027": "ctx-rh-rostralmiddlefrontal",
+        "2028": "ctx-rh-superiorfrontal",
+        "2029": "ctx-rh-superiorparietal",
+        "2030": "ctx-rh-superiortemporal",
+        "2031": "ctx-rh-supramarginal",
+        "2034": "ctx-rh-transversetemporal",
+        "2035": "ctx-rh-insula"
+    }
+}

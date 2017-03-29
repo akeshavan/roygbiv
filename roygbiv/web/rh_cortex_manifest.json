@@ -1,0 +1,260 @@
+{
+    "colors": {
+        "2002": [
+            "0.7586206896551724",
+            "0.20689655172413793",
+            "0.0"
+        ],
+        "2003": [
+            "0.48275862068965514",
+            "0.4482758620689655",
+            "0.48275862068965514"
+        ],
+        "2005": [
+            "0.3448275862068966",
+            "0.3103448275862069",
+            "0.034482758620689655"
+        ],
+        "2006": [
+            "0.0",
+            "0.3103448275862069",
+            "0.24137931034482757"
+        ],
+        "2007": [
+            "1.0",
+            "0.6896551724137931",
+            "0.48275862068965514"
+        ],
+        "2008": [
+            "0.034482758620689655",
+            "0.24137931034482757",
+            "0.5862068965517241"
+        ],
+        "2009": [
+            "0.6206896551724138",
+            "0.6551724137931034",
+            "1.0"
+        ],
+        "2010": [
+            "0.5172413793103449",
+            "0.8275862068965517",
+            "1.0"
+        ],
+        "2011": [
+            "0.3448275862068966",
+            "0.3793103448275862",
+            "0.3448275862068966"
+        ],
+        "2012": [
+            "0.6206896551724138",
+            "0.06896551724137931",
+            "1.0"
+        ],
+        "2013": [
+            "0.6206896551724138",
+            "0.48275862068965514",
+            "0.3448275862068966"
+        ],
+        "2014": [
+            "0.0",
+            "0.3103448275862069",
+            "0.24137931034482757"
+        ],
+        "2015": [
+            "0.6206896551724138",
+            "0.6551724137931034",
+            "1.0"
+        ],
+        "2016": [
+            "0.48275862068965514",
+            "0.4482758620689655",
+            "0.48275862068965514"
+        ],
+        "2017": [
+            "0.7241379310344828",
+            "1.0",
+            "0.10344827586206896"
+        ],
+        "2018": [
+            "0.0",
+            "0.8620689655172413",
+            "0.7931034482758621"
+        ],
+        "2019": [
+            "0.5172413793103449",
+            "0.8275862068965517",
+            "1.0"
+        ],
+        "2020": [
+            "0.4482758620689655",
+            "0.034482758620689655",
+            "0.24137931034482757"
+        ],
+        "2021": [
+            "0.10344827586206896",
+            "0.896551724137931",
+            "0.3793103448275862"
+        ],
+        "2022": [
+            "1.0",
+            "0.9310344827586207",
+            "0.5862068965517241"
+        ],
+        "2023": [
+            "0.5172413793103449",
+            "0.5862068965517241",
+            "0.5172413793103449"
+        ],
+        "2024": [
+            "0.10344827586206896",
+            "0.896551724137931",
+            "0.3793103448275862"
+        ],
+        "2025": [
+            "0.0",
+            "0.5517241379310345",
+            "0.5172413793103449"
+        ],
+        "2026": [
+            "0.9310344827586207",
+            "0.7931034482758621",
+            "1.0"
+        ],
+        "2027": [
+            "0.7586206896551724",
+            "0.0",
+            "0.5172413793103449"
+        ],
+        "2028": [
+            "0.3448275862068966",
+            "0.3793103448275862",
+            "0.3448275862068966"
+        ],
+        "2029": [
+            "0.0",
+            "0.5517241379310345",
+            "0.5172413793103449"
+        ],
+        "2030": [
+            "0.5172413793103449",
+            "0.6551724137931034",
+            "0.0"
+        ],
+        "2031": [
+            "0.27586206896551724",
+            "0.41379310344827586",
+            "1.0"
+        ],
+        "2034": [
+            "0.3793103448275862",
+            "0.27586206896551724",
+            "0.48275862068965514"
+        ],
+        "2035": [
+            "0.7931034482758621",
+            "0.9655172413793103",
+            "0.7931034482758621"
+        ]
+    },
+    "filename": {
+        "2001": "right_cortical_surface/label2001.vtk",
+        "2002": "right_cortical_surface/label2002.vtk",
+        "2003": "right_cortical_surface/label2003.vtk",
+        "2005": "right_cortical_surface/label2005.vtk",
+        "2006": "right_cortical_surface/label2006.vtk",
+        "2007": "right_cortical_surface/label2007.vtk",
+        "2008": "right_cortical_surface/label2008.vtk",
+        "2009": "right_cortical_surface/label2009.vtk",
+        "2010": "right_cortical_surface/label2010.vtk",
+        "2011": "right_cortical_surface/label2011.vtk",
+        "2012": "right_cortical_surface/label2012.vtk",
+        "2013": "right_cortical_surface/label2013.vtk",
+        "2014": "right_cortical_surface/label2014.vtk",
+        "2015": "right_cortical_surface/label2015.vtk",
+        "2016": "right_cortical_surface/label2016.vtk",
+        "2017": "right_cortical_surface/label2017.vtk",
+        "2018": "right_cortical_surface/label2018.vtk",
+        "2019": "right_cortical_surface/label2019.vtk",
+        "2020": "right_cortical_surface/label2020.vtk",
+        "2021": "right_cortical_surface/label2021.vtk",
+        "2022": "right_cortical_surface/label2022.vtk",
+        "2023": "right_cortical_surface/label2023.vtk",
+        "2024": "right_cortical_surface/label2024.vtk",
+        "2025": "right_cortical_surface/label2025.vtk",
+        "2026": "right_cortical_surface/label2026.vtk",
+        "2027": "right_cortical_surface/label2027.vtk",
+        "2028": "right_cortical_surface/label2028.vtk",
+        "2029": "right_cortical_surface/label2029.vtk",
+        "2030": "right_cortical_surface/label2030.vtk",
+        "2031": "right_cortical_surface/label2031.vtk",
+        "2032": "right_cortical_surface/label2032.vtk",
+        "2033": "right_cortical_surface/label2033.vtk",
+        "2034": "right_cortical_surface/label2034.vtk",
+        "2035": "right_cortical_surface/label2035.vtk",
+        "999":  "right_cortical_surface/label999.vtk"
+    },
+    "name": {
+        "1002": "ctx-lh-caudalanteriorcingulate",
+        "1003": "ctx-lh-caudalmiddlefrontal",
+        "1005": "ctx-lh-cuneus",
+        "1006": "ctx-lh-entorhinal",
+        "1007": "ctx-lh-fusiform",
+        "1008": "ctx-lh-inferiorparietal",
+        "1009": "ctx-lh-inferiortemporal",
+        "1010": "ctx-lh-isthmuscingulate",
+        "1011": "ctx-lh-lateraloccipital",
+        "1012": "ctx-lh-lateralorbitofrontal",
+        "1013": "ctx-lh-lingual",
+        "1014": "ctx-lh-medialorbitofrontal",
+        "1015": "ctx-lh-middletemporal",
+        "1016": "ctx-lh-parahippocampal",
+        "1017": "ctx-lh-paracentral",
+        "1018": "ctx-lh-parsopercularis",
+        "1019": "ctx-lh-parsorbitalis",
+        "1020": "ctx-lh-parstriangularis",
+        "1021": "ctx-lh-pericalcarine",
+        "1022": "ctx-lh-postcentral",
+        "1023": "ctx-lh-posteriorcingulate",
+        "1024": "ctx-lh-precentral",
+        "1025": "ctx-lh-precuneus",
+        "1026": "ctx-lh-rostralanteriorcingulate",
+        "1027": "ctx-lh-rostralmiddlefrontal",
+        "1028": "ctx-lh-superiorfrontal",
+        "1029": "ctx-lh-superiorparietal",
+        "1030": "ctx-lh-superiortemporal",
+        "1031": "ctx-lh-supramarginal",
+        "1034": "ctx-lh-transversetemporal",
+        "1035": "ctx-lh-insula",
+        "2002": "ctx-rh-caudalanteriorcingulate",
+        "2003": "ctx-rh-caudalmiddlefrontal",
+        "2005": "ctx-rh-cuneus",
+        "2006": "ctx-rh-entorhinal",
+        "2007": "ctx-rh-fusiform",
+        "2008": "ctx-rh-inferiorparietal",
+        "2009": "ctx-rh-inferiortemporal",
+        "2010": "ctx-rh-isthmuscingulate",
+        "2011": "ctx-rh-lateraloccipital",
+        "2012": "ctx-rh-lateralorbitofrontal",
+        "2013": "ctx-rh-lingual",
+        "2014": "ctx-rh-medialorbitofrontal",
+        "2015": "ctx-rh-middletemporal",
+        "2016": "ctx-rh-parahippocampal",
+        "2017": "ctx-rh-paracentral",
+        "2018": "ctx-rh-parsopercularis",
+        "2019": "ctx-rh-parsorbitalis",
+        "2020": "ctx-rh-parstriangularis",
+        "2021": "ctx-rh-pericalcarine",
+        "2022": "ctx-rh-postcentral",
+        "2023": "ctx-rh-posteriorcingulate",
+        "2024": "ctx-rh-precentral",
+        "2025": "ctx-rh-precuneus",
+        "2026": "ctx-rh-rostralanteriorcingulate",
+        "2027": "ctx-rh-rostralmiddlefrontal",
+        "2028": "ctx-rh-superiorfrontal",
+        "2029": "ctx-rh-superiorparietal",
+        "2030": "ctx-rh-superiortemporal",
+        "2031": "ctx-rh-supramarginal",
+        "2034": "ctx-rh-transversetemporal",
+        "2035": "ctx-rh-insula"
+    }
+}
