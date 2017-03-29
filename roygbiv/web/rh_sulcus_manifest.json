@@ -116,7 +116,7 @@
             0.7850669894691563
         ]
     },
-    "files": {
+    "filename": {
         "1": "right_cortical_surface/sulcus1.vtk",
         "10": "right_cortical_surface/sulcus10.vtk",
         "11": "right_cortical_surface/sulcus11.vtk",

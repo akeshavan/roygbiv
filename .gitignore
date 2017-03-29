@@ -6,5 +6,5 @@ scripts
 three.js
 img
 #js
-*.json
+#*.json
 *.pyc

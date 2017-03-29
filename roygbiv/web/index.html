@@ -43,8 +43,18 @@
 							<li role="presentation" data-toggle="pill" class=""><a href="#" ng-click="load_hemi('rh')" id="right">RH</a></li>
 						</ul>
 					</div>
+
+					<div id="navpill" style="margin-left: 31.5%;">
+						<ul class="nav nav-pills">
+							<li role="presentation" data-toggle="pill" class="active" ng-click="load_structure('cortex')" id="cortex"><a href="#">Cortex</a></li>
+							<li role="presentation" data-toggle="pill" class=""><a href="#" ng-click="load_structure('sulcus')" id="sulcus">Sulcus</a></li>
+						</ul>
+					</div>
+
 					<br><br><br>
-					Shift+click on a label to see stats
+					<div style="margin-top:20px;">
+						Shift+click on a label to see stats
+					</div>
 					<br />
 					<b>Selected Label: {{selectedLabel}}</b>
 				</div>
@@ -58,7 +68,9 @@
 		<script>
 			angular.module('navigator', [])
 			.controller('NavigateController', ['$scope', function($scope) {
-                $scope.brain = new Brain({
+							  $scope.structure = "cortex"
+								$scope.hemi = "lh"
+								$scope.brain = new Brain({
                     divID: "nav-brain",  // div to render brain
                     callback: function(mesh) {
                         // callback when a mesh is selected/deselected
@@ -73,20 +85,28 @@
                         }
                         $scope.$apply();
                     },
-                    manifest_url: '/lh_manifest.json',
+                    manifest_url: '/'+$scope.hemi+'_'+$scope.structure+'_manifest.json',
                     label_mapper: "exploded/labels.json",
 										base_data_url: "/exploded"
                 });
 
 								$scope.load_hemi = function(hemi){
 									console.log("hemisphere is", hemi)
+									$scope.hemi = hemi
 									if (hemi == "lh"){
 										var folder = "left_cortical_surface"
 									}
 									if (hemi == "rh"){
 										var folder = "right_cortical_surface"
 									}
-									$scope.brain.manifest_url = '/'+hemi+'_manifest.json'
+									$scope.brain.manifest_url = '/'+hemi+"_"+$scope.structure+'_manifest.json'
+									$scope.brain.loadBrain()
+
+								}
+								$scope.load_structure = function(structure){
+									console.log("hemisphere is", structure)
+									$scope.structure = structure
+									$scope.brain.manifest_url = '/'+$scope.hemi+"_"+$scope.structure+'_manifest.json'
 									$scope.brain.loadBrain()
 
 								}

@@ -1,3 +1,108 @@
+/*var useCSV = (function(){
+		var collectionOfCSVs = {};
+		// Cache CSVs by their filename as they are loaded and call the callback function on
+		// the csv data if/once loaded.
+		return function(filename, callback){
+				// if the csv data by this filename already exists...
+				if (collectionOfCSVs[filename]){
+						// use it
+						callback(collectionOfCSVs[filename]);
+				} else {
+						d3.csv(filename, function(csv){
+								// remember the data for this new csv
+								collectionOfCSVs[filename] = csv;
+								// use the csv data
+								callback(csv)
+						})
+				}
+		}
+})();
+// use mesh data and csv data to calculate and cache face_metrics for all possible
+// keys on the faceMetrics argument.
+var calculateFaceMetrics = function(mesh, mesh_options, callback){
+		//var mesh_options = mesh.anisha_opts
+		var csv_filename = mesh_options["filename"]
+		var keys = Object.keys(mesh_options.overlays);
+		if(!mesh.face_metrics){
+				mesh.face_metrics = {}
+		}
+		useCSV(csv_filename, function(csv){
+				keys.forEach(function(key, index){
+						if(mesh.face_metrics[key]){
+								return;
+						}
+						mesh.face_metrics[key] = mesh.geometry.faces.map(function(element, index){
+								var vals = parseFloat(csv[element["a"]][key]) + parseFloat(csv[element["b"]][key]) + parseFloat(csv[element["c"]][key])
+								//vals is the average value of the "key"(travel depth, geodesic depth, etc) for the 3 vertices of the face
+								// anisha: I have no idea if this is the right thing to do
+								return vals/3;
+						});
+				});
+				if(typeof callback === 'function'){
+						callback(mesh, mesh_options);
+				}
+		});
+}
+// Color brain depends on face_metrics being calculated once on initialization.
+// This means that on change from the gui, color brain will only be going over each
+// of the faces in the geometry and looking up what color it should set that face to.
+//
+// Before, the csv was being reloaded each time and the face_metrics was recalculated each time.
+var color_brain = function(mesh, mesh_options){
+		//var mesh_options = mesh.anisha_opts
+		//var key = mesh_options.key
+
+		mesh.material.transparent = true
+		mesh.material.opacity = mesh_options.mesh_transparency || 1
+		mesh.visible = mesh_options.mesh_visible || 1
+		var overlays = Object.keys(mesh_options.overlays)
+		var empty_mesh = true
+
+		for (i=0;i<overlays.length;i++){
+
+				var overlay_name = overlays[i]
+				var overlay_options = mesh_options.overlays[overlay_name]
+
+
+				if (overlay_options.visible) {
+						var face_metrics = mesh.face_metrics[overlay_name]
+						empty_mesh = false
+
+				var colorgrad = d3.scale.linear()
+						.domain([overlay_options.vmin, overlay_options.vmax])//[_.min(face_metrics), _.max(face_metrics)])
+						.range([overlay_options.colormin, overlay_options.colormax]);
+						mesh.geometry.faces.forEach(function(element, index){
+								if (face_metrics[index] > overlay_options.threshold){
+										var col = new THREE.Color(colorgrad(face_metrics[index]))
+										element.color.setRGB(col.r, col.g, col.b)
+										element.coloredBy = overlay_name
+								}
+								else if(element.coloredBy != overlay_name && element.color.r != 1 && element.color.g != 1 && element.color.b != 1){
+										if (mesh_options.overlays[element.coloredBy].visible== false) {
+												element.color.setRGB(1, 1, 1)
+										}
+										//do nothing since its colored from something else
+								}
+								else {
+										// Undo the color setting by setting it back to white.
+										element.color.setRGB(1, 1, 1)
+								}
+						});//end forEach
+
+						mesh.geometry.colorsNeedUpdate = true
+				}//end if
+
+				}//end of for loop
+		if (empty_mesh){
+						console.log("no overlays to show")
+						mesh.geometry.faces.forEach(function(element, index){element.color.setRGB(1, 1, 1)})
+						mesh.geometry.colorsNeedUpdate = true
+				}
+
+				console.log("finished coloring brain")
+
+};//end color brain
+*/
 function do_boxplot(divID, mesh) {
 	/* Draws a box plot, given the labelID, color */
 	console.log("doing boxplots")
@@ -93,6 +198,7 @@ function do_boxplot(divID, mesh) {
 		    .data(data)
 		    .enter()
 		    .append("g")
+				.on("click", function(){})
 		    .attr("transform", function(d) {
 			return "translate(" + x(d[0]) + "," + margin.top + ")";
 		}).call(chart.width(x.rangeBand()));

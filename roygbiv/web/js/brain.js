@@ -185,7 +185,7 @@ var Brain = function(kwargs) {
 
 				if (mesh_url) {  // Load remote mesh
 					if (mesh_url[0] != '/')  // relative path is relative to manifest
-						mesh_url = _this.base_data_url + "/" + mesh_url +'?' + (new Date());
+						mesh_url = _this.base_data_url + "/" + mesh_url //+'?' + (new Date());
 						console.log("mesh url", mesh_url)
 					_this.loadMesh(mesh_url, mesh_props);
 				} else if (_this.meshes && _this.meshes[mesh_props.roi_key]) {  // Set existing mesh properties
