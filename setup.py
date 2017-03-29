@@ -62,7 +62,8 @@ def main(**extra_args):
           package_data = {'roygbiv': [pjoin('web/js/', '*.js'),
                                       pjoin('web/js/libs/', '*.js'),
                                       pjoin('web/css/', '*.css'),
-                                      pjoin('web/',"*.html")]},
+                                      pjoin('web/',"*.html"),
+                                      pjoin('web/',"*.json")]},
           scripts=[pjoin('roygbiv', 'roygbiv')],
           **extra_args
          )

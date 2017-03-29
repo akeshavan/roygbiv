@@ -58,11 +58,11 @@ function do_boxplot(divID, mesh) {
 		data[4][1] = [];
 
 		csv.forEach(function(x) {
-			var v1 = Math.floor(x.travel_depth),
-				v2 = Math.floor(x.geodesic_depth),
-				v3 = Math.floor(x.mean_curvature),
-				v4 = Math.floor(x.freesurfer_curvature),
-				v5 = Math.floor(x.freesurfer_thickness);
+			var v1 = Math.floor(x["travel depth"]),
+				v2 = Math.floor(x["geodesic depth"]),
+				v3 = Math.floor(x["mean curvature"]),
+				v4 = Math.floor(x["freesurfer curvature"]),
+				v5 = Math.floor(x["freesurfer thickness"]);
 			var rowMax = Math.max(v1, Math.max(v2, Math.max(v3, Math.max(v4, v5))));
 			var rowMin = Math.min(v1, Math.min(v2, Math.min(v3, Math.min(v4, v5))));
 			data[0][1].push(v1);

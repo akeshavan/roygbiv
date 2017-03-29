@@ -27,6 +27,7 @@ var Brain = function(kwargs) {
 	_this.data_url = kwargs.data_url || null; // _this.manifest_url;
 	_this.view = kwargs.view || {};  // allow overriding fov, near, far, etc
 	_this.value_key = kwargs.value_key || null;
+	_this.base_data_url = kwargs.base_data_url || null;
 
 	// Just to declare the parts up front...
 	this.camera = null;
@@ -131,6 +132,7 @@ var Brain = function(kwargs) {
 		kwargs = kwargs || {};
 		_this.manifest_url = (kwargs.manifest_url || _this.manifest_url) + '?' + (new Date())
 		_this.data_url = (kwargs.data_url || _this.data_url)
+		_this.base_data_url = (kwargs.base_data_url || _this.base_data_url)
 		if (_this.data_url)
 			_this.data_url += '?' + (new Date())
 
@@ -183,7 +185,8 @@ var Brain = function(kwargs) {
 
 				if (mesh_url) {  // Load remote mesh
 					if (mesh_url[0] != '/')  // relative path is relative to manifest
-						mesh_url = base_url + "/" + mesh_url;
+						mesh_url = _this.base_data_url + "/" + mesh_url +'?' + (new Date());
+						console.log("mesh url", mesh_url)
 					_this.loadMesh(mesh_url, mesh_props);
 				} else if (_this.meshes && _this.meshes[mesh_props.roi_key]) {  // Set existing mesh properties
 					copy_mesh_props(mesh_props, _this.meshes[mesh_props.roi_key]);
@@ -213,7 +216,7 @@ var Brain = function(kwargs) {
 				}
 			}
 		});
-		
+
 	};
 
 	// resizing function
@@ -365,5 +368,3 @@ var Brain = function(kwargs) {
 	_this.__init__();
 	return _this;
 }
-
-

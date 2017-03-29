@@ -25,7 +25,7 @@ def make_server(web_dir, data_dir):
         return send_from_directory(web_dir, html_file)
 
     # Generic
-    @app.route('/viz/<path:path>')
+    @app.route('/exploded/<path:path>')
     def send_data(path):
         return send_from_directory(data_dir, path)
 

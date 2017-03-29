@@ -73,13 +73,20 @@
                         }
                         $scope.$apply();
                     },
-                    manifest_url: 'viz/lh/lh_manifest.json',
-                    label_mapper: "viz/labels.json"
+                    manifest_url: '/lh_manifest.json',
+                    label_mapper: "exploded/labels.json",
+										base_data_url: "/exploded"
                 });
 
 								$scope.load_hemi = function(hemi){
 									console.log("hemisphere is", hemi)
-									$scope.brain.manifest_url = 'viz/'+hemi+'/'+hemi+'_manifest.json'
+									if (hemi == "lh"){
+										var folder = "left_cortical_surface"
+									}
+									if (hemi == "rh"){
+										var folder = "right_cortical_surface"
+									}
+									$scope.brain.manifest_url = '/'+hemi+'_manifest.json'
 									$scope.brain.loadBrain()
 
 								}
